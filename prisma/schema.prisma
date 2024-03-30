@@ -36,7 +36,7 @@ model Contact {
   id Int @id @default(autoincrement())
   email String @unique 
   phone String?
-  first String
+  first String?
   last String?
   nickname String?  
   twitter String?
