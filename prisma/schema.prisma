@@ -30,6 +30,7 @@ model Avatar {
   url String
 }
 
+
 model Contact {
   // contactOwner User @relation(fields: [ownerId], references: [id]) 
  // ownerId Int @unique

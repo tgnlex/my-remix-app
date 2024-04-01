@@ -1,5 +1,5 @@
-import prisma from 'db/prisma';
-import {Form, useLoaderData, Link} from '@remix-run/react';
+import prisma from 'prisma/prisma';
+import { useLoaderData, Link} from '@remix-run/react';
 import {json} from '@remix-run/node';
 
 export const loader = async () => {

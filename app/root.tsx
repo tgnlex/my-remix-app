@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import Sidebar from './nav';
+import Sidebar from './components/nav';
 import globalStylesHref from './style/global.css';
 import rootStylesHref from './style/root.css';
 import sidebarStylesHref from './style/sidebar.css';

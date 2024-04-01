@@ -1,5 +1,4 @@
 export type ContactMutation = {
-  id?: string;
   first?: string;
   last?: string;
   nickname?: string;

@@ -1,4 +1,4 @@
-import prisma from 'db/prisma';
+import prisma from 'prisma/prisma';
 
 async function main() {
   const contact = await prisma.contact.create({

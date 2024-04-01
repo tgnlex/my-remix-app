@@ -1,8 +1,12 @@
-import prisma from 'public/prisma';
+import prisma from 'prisma/prisma';
 
+async function getContact (props: number) {
+  const contact = await prisma.contact.findUnique({
+    where: {
+      id: props
+    }
+  })
+  return contact;
+}
 
-const getContact = await prisma.contact.findOne({
-  orderBy: {
-    id: true
-  }
-})
+export default getContact;
