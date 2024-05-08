@@ -31,25 +31,7 @@ model Avatar {
 }
 
 
-model Contact {
-  // contactOwner User @relation(fields: [ownerId], references: [id]) 
- // ownerId Int @unique
-  id Int @id @default(autoincrement())
-  email String @unique 
-  phone String?
-  first String?
-  last String?
-  nickname String?  
-  twitter String?
-  notes String?
-  avatar String? 
-  favorite Boolean? @default(false)
-}
 
-// model ContactAvatar {
-//  contact Contact @relation(fields: [contactId], references: [id])
-//  contactId Int @unique
-// }
 
 
 model Post {
@@ -57,7 +39,7 @@ model Post {
   title String 
   content String 
   published Boolean @default(false)
-  creaetedAt DateTime
+  createdAt DateTime
   author User @relation(fields: [authorId], references: [id])
   authorId Int 
   comments Comment[]

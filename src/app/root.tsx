@@ -7,9 +7,9 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import Sidebar from './components/nav';
-import globalStylesHref from './style/global.css';
-import rootStylesHref from './style/root.css';
-import sidebarStylesHref from './style/sidebar.css';
+import globalStylesHref from '~/style/global.css';
+import rootStylesHref from '~/style/root.css';
+import sidebarStylesHref from '~/style/sidebar.css';
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: globalStylesHref},
   { rel: "stylesheet", href: sidebarStylesHref},

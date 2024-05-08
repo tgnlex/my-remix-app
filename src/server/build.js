@@ -1,4 +1,4 @@
-import viteDevServer from '../mw/viteDev.js';
+import viteDevServer from './mw/viteDev.js';
 
 const build = viteDevServer 
     ? () => 
