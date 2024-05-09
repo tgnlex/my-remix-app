@@ -1,6 +1,6 @@
+import process from 'node:process'
 const viteDevServer = 
-  // Check if running in prod or dev
-  process.env.NODE_ENV === "production"
+process.env.NODE_ENV === "production"
     // If in production: do nothing
     ? null 
     // If in dev: 
